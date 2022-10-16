@@ -1,0 +1,101 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+@mixin width{
+    width: 190px;
+}
+@mixin contain {
+    width: 215px;
+    height: 415px;
+    border: 1px solid black;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    background-color: white;
+    border:  40px;
+    box-shadow: 0 0 15px rgba(36, 35, 35, 0.735);
+    background: #fff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    @include center();
+    justify-content: space-around;
+}
+.container{
+    background-color: rgb(218, 212, 212);
+    width: 250px;
+    height: 435px;
+    display: grid;
+    grid-template-areas: 
+    "column-1 column-2 column-3";
+    justify-content: center;
+    align-items: flex-end;
+    align-content: stretch;
+
+}
+.container-1{
+   
+    grid-area: column-1;
+     @include contain();
+    
+}
+.container-2{
+    @include contain();
+    grid-area: column-2;
+    img{
+        height: 128px;
+        width: 215px;
+    }
+}
+.container-3{
+    @include contain();
+    grid-area: column-3;
+}
+img{
+    height: 153px;
+    width: 215px;
+    
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-bottom: inherit;
+
+}
+.inf{
+    height: 40px;
+    @include width();
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: flex-end;
+    .colorLet{
+        color: rgb(126, 208, 3)
+    }
+}
+button{
+    height: 40px;
+    @include width();
+    display: flex;
+    background-color: greenyellow;
+}
+.more{
+    height: 34px;
+    @include width();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text, .title{
+    @include width();
+}

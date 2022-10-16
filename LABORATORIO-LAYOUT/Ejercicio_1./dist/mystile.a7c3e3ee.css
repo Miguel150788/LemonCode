@@ -1,0 +1,120 @@
+body {
+  height: 100vh;
+}
+
+.container-1 {
+  display: grid;
+  display: flex;
+  grid-auto-columns: 1fr;
+  height: 150px;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.container-1 .box-darken-1 {
+  background-color: hwb(0 0% 20%);
+}
+.container-1 .box-lighten-1 {
+  background-color: hwb(0 0% -20%);
+}
+.container-1 .box-darken-2 {
+  background-color: hwb(0 0% 40%);
+}
+.container-1 .box-lighten-2 {
+  background-color: hwb(0 0% -40%);
+}
+.container-1 .box-darken-3 {
+  background-color: hwb(0 0% 60%);
+}
+.container-1 .box-lighten-3 {
+  background-color: hwb(0 0% -60%);
+}
+.container-1 .box-darken-4 {
+  background-color: hwb(0 0% 80%);
+}
+.container-1 .box-lighten-4 {
+  background-color: hwb(0 0% -80%);
+}
+.container-1 .box-base-color {
+  background-color: hwb(0 0% 0%);
+}
+
+.container-2 {
+  display: grid;
+  display: flex;
+  grid-auto-columns: 1fr;
+  height: 150px;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.container-2 .box-darken-1 {
+  background-color: hwb(240 0% 20%);
+}
+.container-2 .box-lighten-1 {
+  background-color: hwb(240 0% -20%);
+}
+.container-2 .box-darken-2 {
+  background-color: hwb(240 0% 40%);
+}
+.container-2 .box-lighten-2 {
+  background-color: hwb(240 0% -40%);
+}
+.container-2 .box-darken-3 {
+  background-color: hwb(240 0% 60%);
+}
+.container-2 .box-lighten-3 {
+  background-color: hwb(240 0% -60%);
+}
+.container-2 .box-darken-4 {
+  background-color: hwb(240 0% 80%);
+}
+.container-2 .box-lighten-4 {
+  background-color: hwb(240 0% -80%);
+}
+.container-2 .box-base-color {
+  background-color: hwb(240 0% 0%);
+}
+
+.container-3 {
+  display: grid;
+  display: flex;
+  grid-auto-columns: 1fr;
+  height: 150px;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.container-3 .box-darken-1 {
+  background-color: hwb(120 1% 56%);
+}
+.container-3 .box-lighten-1 {
+  background-color: hwb(120 1% 16%);
+}
+.container-3 .box-darken-2 {
+  background-color: hwb(120 1% 76%);
+}
+.container-3 .box-lighten-2 {
+  background-color: hwb(120 1% -4%);
+}
+.container-3 .box-darken-3 {
+  background-color: hwb(120 1% 96%);
+}
+.container-3 .box-lighten-3 {
+  background-color: hwb(120 1% -24%);
+}
+.container-3 .box-darken-4 {
+  background-color: hwb(120 1% 116%);
+}
+.container-3 .box-lighten-4 {
+  background-color: hwb(120 1% -44%);
+}
+.container-3 .box-base-color {
+  background-color: hwb(120 1% 36%);
+}
+
+span {
+  color: white;
+}
+
+/*# sourceMappingURL=/mystile.a7c3e3ee.css.map */

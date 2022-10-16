@@ -1,0 +1,95 @@
+body{
+    height: 100vh;
+}
+@mixin color ($size:hwb(0 0% 0%) ){
+    background-color: $size;
+}
+@mixin color1 ($size: hwb(240 0% 0%)  ){
+    background-color: $size;
+}
+@mixin color2 ($size: hwb(120 1% 36%) ){
+    background-color: $size;
+}
+
+.container-1{
+    display: grid;
+    display: flex;
+    grid-auto-columns: 1fr;
+    height: 150px;
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 10px;
+    $i: 1;
+    $mas : 0;
+    $men : 0;
+  @while $i <= 4 {
+    .box-darken-#{$i}{
+        $mas : $mas  + 20;    
+        @include color(hwb(0 0% 0% + $mas));
+        }
+        .box-lighten-#{$i}{
+            $men : $men  - 20;    
+            @include color(hwb(0 0% 0% + $men));
+            }
+        $i: $i + 1;
+    }
+    .box-base-color{
+        @include color();
+    }
+}
+.container-2{
+    display: grid;
+    display: flex;
+    grid-auto-columns: 1fr;
+    height: 150px;
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 10px;
+    $i: 1;
+    $mas : 0;
+    $men : 0;
+  @while $i <= 4 {
+    .box-darken-#{$i}{
+        $mas : $mas  + 20;    
+        @include color1(hwb(240 0% 0% + $mas));
+        }
+        .box-lighten-#{$i}{
+            $men : $men  - 20;    
+            @include color1(hwb(240 0% 0% + $men));
+            }
+        $i: $i + 1;
+    }
+    .box-base-color{
+        @include color1();
+    }
+}
+.container-3{
+    display: grid;
+    display: flex;
+    grid-auto-columns: 1fr;
+    height: 150px;
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 10px;
+    $i: 1;
+    $mas : 0;
+    $men : 0;
+  @while $i <= 4 {
+    .box-darken-#{$i}{
+        $mas : $mas  + 20;    
+        @include color2(hwb(120 1% 36% + $mas));
+        }
+        .box-lighten-#{$i}{
+            $men : $men  - 20;    
+            @include color2(hwb(120 1% 36% + $men));
+            }
+        $i: $i + 1;
+    }
+    .box-base-color{
+        @include color2();
+    }
+}
+span{
+    color: white
+}
+

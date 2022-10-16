@@ -1,0 +1,62 @@
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+div {
+  height: 500px;
+  border-radius: 3%;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.baseColor {
+  background-color: rgb(226, 13, 10);
+  height: 150%;
+  width: 150px;
+  border: 1px solid grey;
+}
+
+.important {
+  background-color: rgb(94, 9, 4);
+  height: 150%;
+  width: 150px;
+  border: 1px solid grey;
+}
+
+.warning {
+  background-color: rgba(240, 112, 115, 0.681);
+  height: 150%;
+  width: 150px;
+  border: 1px solid grey;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+}
+
+.primaryFont {
+  display: grid;
+  height: 150%;
+  width: 150px;
+}
+
+.box-with {
+  height: 150%;
+  width: 150px;
+  border: 1px solid grey;
+  box-shadow: -10px 5px 5px rgb(77, 76, 76);
+}
+
+.secondSpan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*# sourceMappingURL=/myStyle.82484f1e.css.map */

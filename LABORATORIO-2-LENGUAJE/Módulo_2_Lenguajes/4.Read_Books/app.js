@@ -23,7 +23,7 @@ let prueba = isBookRead(books,'Devastación');
 
 //Se realiza con la comprobacion, si se cumple las dos devuelve true si no false.
 
-const isBookRead2 = (books,title) =>books.some(book => book.title ===title && book.isRead===true)
+const isBookRead2 = (books,title) =>books.some(book => book.title ===title && book.isRead)
 
 console.log("Esta prueba se realiza con un for: ", prueba);
 console.log(`Esta prueba se hace con find: `, isBookRead2(books, "Harry Potter y la piedra filosofal"))

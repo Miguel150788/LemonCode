@@ -1,0 +1,19 @@
+$blue-color: teal;
+
+.red-background {
+  background-color: $blue-color;
+}
+
+img {
+  width: 150px;
+}
+
+.hello {
+  background-color: $blue-color;
+
+  .logo{
+    width:150px;
+    display: flex;
+    justify-content: center;
+  }
+}

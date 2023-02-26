@@ -6,7 +6,7 @@ export const ListApiRickMorty: React.FC = () => {
   const { filter, setFilter, member } = List();
   return (
     <div className="root-list-pag">
-      <h2>Tienes 826 Personajes para elegir!!! </h2>
+      <h2 className="h2-rick">Tienes 826 Personajes para elegir!!! </h2>
       <input
         className="input-rick"
         value={filter}
@@ -29,7 +29,7 @@ export const ListApiRickMorty: React.FC = () => {
           {"Species: "}
           {member.species}
         </h3>
-        <h3>
+        <h3 className="rick">
           <img src={member.image} alt="" />
         </h3>
       </div>

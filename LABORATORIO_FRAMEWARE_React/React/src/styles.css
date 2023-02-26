@@ -42,8 +42,8 @@ body {
   width: 80px;
 }
 .root-list-pag {
-  background-color: rgb(20, 208, 208);
   height: 100%;
+  background-color: rgb(20, 208, 208);
 }
 .container-list-rick {
   display: flex;
@@ -54,8 +54,17 @@ body {
 }
 .list-rick {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 10px;
 }
+.img-rick {
+  width: 100px;
+  padding: 10px;
+}
+.img-git {
+  width: 150px;
+  padding: 10px;
+}
+
 .Link {
   color: red;
   font-weight: bold;
@@ -63,4 +72,53 @@ body {
   display: flex;
   justify-content: center;
   padding: 30px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(9, 194, 194);
+  font-size: large;
+}
+
+.button-Git {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.h2-rick {
+  margin-block-start: auto;
+}
+.rick > img {
+  width: 150px;
+}
+.button-Rick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container-git {
+  color: rgb(202, 116, 12);
+  background-color: rgb(193, 219, 145);
+}
+
+.container-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(209, 227, 242);
 }

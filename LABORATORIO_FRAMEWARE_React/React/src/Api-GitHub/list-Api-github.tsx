@@ -24,7 +24,7 @@ export const ListPage: React.FC = () => {
   };
   console.log(members);
   return (
-    <>
+    <div className="container-git">
       <h2>Hello from List page</h2>
       <ListPageComponent onShare={hadlendSearch} />
       <div className="list-user-list-container">
@@ -40,6 +40,6 @@ export const ListPage: React.FC = () => {
         ))}
       </div>
       <Link to="/listPrincipal">Navigate to list pricipal page</Link>
-    </>
+    </div>
   );
 };

@@ -17,7 +17,7 @@ export const List = () => {
     species: "",
     image: "",
   });
-  const [debounceUser] = useDebounce(filter, 2000);
+  const [debounceUser] = useDebounce(filter, 1500);
   console.log(member);
   React.useEffect(() => {
     fetch(`https://rickandmortyapi.com/api/character/${filter}`)

@@ -1,9 +1,5 @@
 import React from "react";
-
-import { Link, useNavigate } from "react-router-dom";
-import { InputText } from "primereact/inputtext";
-
-import PrimeReact from "primereact/api";
+import { useNavigate } from "react-router-dom";
 
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
@@ -23,7 +19,7 @@ export const LoginPage: React.FC = () => {
   return (
     <>
       <form className="form" onSubmit={handleNavigation}>
-        <h2>Hello from login page</h2>
+        <h2>Hello from login Laboratory React</h2>
 
         <div className="form-1">
           <div className="form-2">
@@ -42,7 +38,6 @@ export const LoginPage: React.FC = () => {
             />
           </div>
         </div>
-
         <button type="submit">Login</button>
       </form>
     </>
